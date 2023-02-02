@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: medium;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.1)), url('../Media/taj.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    height: 15vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+}
+
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+a {
+    width: 20%;
+    text-decoration: none;
+}
+
+a:first-child {
+    color: #00b894
+}
+
+a:active,
+:visited {
+    color: white;
+}
+
+main {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1,span {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+}
+
+section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+section .btnone {
+    background-color: #fff;
+    color: #000;
+}
+
+section .btntwo {
+    background-color: #00b894;
+    color: white;
+}
+
+.btnone:hover{
+    background-color: #00b894;
+    color: white;
+}
+.btntwo:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.change_content::after {
+    content: '';
+    animation: anime1 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes anime1 {
+    0% {
+        content: "Darjeeling";
+    }
+
+    20% {
+        content: "Agra";
+    }
+
+    35% {
+        content: "Jaipur";
+    }
+
+    60% {
+        content: "Kerala";
+    }
+
+    80% {
+        content: "Delhi";
+    }
+
+    100% {
+        content: "Mumbai";
+    }
+}
